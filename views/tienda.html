@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda-Peluqueria-Tu-Estilo</title>
+    <link rel="shortcut icon" href="../icons/favicom.png">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
+        </a>   
+        <br>
+            <label for="">By Mara Ibarra</label> 
+        <hr>
+        <h2>Tienda</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../views/turnos.html">Turnos</a>
+            </li>
+            <li>
+                <a href="../views/promociones.html">Promociones</a>
+            </li>
+            <li>
+                <a href="../views/tienda.html">Tienda</a>
+            </li>
+            <li>
+                <a href="../views/contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <input type="text" placeholder="Search..">
+        <img src="../icons/Search-icon.png" alt="icono de busqueda">
+    </nav>
+    <br>
+    <main>
+        <section>
+            <h3>Medios de pago:</h3>
+            <br>
+            <a href="https://www.visa.com.ar/" target="_blank">
+                <img src="../icons/credit-card-icon.png" alt="icono de tarjeta de credito">
+            </a>
+            <a href="https://rapipago.com.ar/rapipagoWeb/" target="_blank">
+                <img src="../icons/money-icon.png" alt="icono de efectivo">
+            </a>
+            <a href="https://www.mercadopago.com.ar/home" target="_blank">
+                <img src="../icons/wire-transfer-icon.png" alt="icno de transferencia bancaria">
+            </a>
+        </section>
+        <section>
+            <h3>Detalle de pedido:</h3>
+            <form action="pedido.js" id="pedido">
+                <fieldset>
+                    <legend>Pedido</legend>
+                    <select name="productos" id="">
+                        <option value="shampoo">Shampoo</option>
+                        <option value="acondicionador">Acondicionador</option>
+                        <option value="accesorioCabello">Accesorio para el Cabello</option>
+                    </select>
+                    <label for="cant">Cantidad</label>
+                    <input type="number" id="cant">
+                    <br>
+                    <label for="medioDePago">Medio de pago:</label>
+                    <br>
+                    <label for="transf">Transferencia Bancaria</label>
+                    <input type="radio" id="transf" name="pago" value="transferencia">
+                    <label for="cred">Tarjeta de credito</label>
+                    <input type="radio" id="cred" name="pago" value="credito">
+                    <label for="deb">Debito</label>
+                    <input type="radio" id="deb" name="pago" value="debito">
+                    <br>
+                    <input type="reset" value="Cancelar">
+                    <input type="submit" value="Enviar">
+                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+        <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="../icons/WhatsApp.webp" alt="icono de WhatsApp">
+        </a>
+        
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="../icons/Instagram-icon.png" alt="icono de instagram">
+        </a>
+        
+        <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank">
+            <img src="../icons/social-facebook-button-blue-icon.png" alt="icono de facebook">
+        </a>
+
+        <a href="https://goo.gl/maps/vo9ZR5jNAijY7hXa8" target="_blank">
+            <img src="../icons/Maps-Location-icon.png" alt="icono de ubicacion">
+        </a>
+         
+    </footer>
+</body>
+</html>
