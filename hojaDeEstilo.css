@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+ver- diferencias entre los diferente navegadores navegadores
+*/
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.texto-izq{
+    text-align: left;
+}
+
+nav{
+    background-color: rgb(77, 216, 13, .5);
+}
+    nav ul{
+        list-style: none;
+    }
+        nav ul li a{
+            font-size: 2.2rem;
+            text-decoration: none;
+            color: rgb(42, 144, 228);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+body{
+    background-image: url(../img/fondoBody.html);
+}
