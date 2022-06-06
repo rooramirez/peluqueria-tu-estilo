@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="../peluqueria-tu-estilo/hojaDeEstilo.css">
 </head>
 <body>
-    <header> 
-        <a href="index.html">
-            <img src="icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
-        </a>   
-        <br>
-            <label for="">By Mara Ibarra</label> 
+    <header>    
+        <label for="">By Rocio Ramirez</label> 
         <hr>
         <h1>Peluqueria Tu Estilo</h1>
     </header>
     <nav>
+        <a href="index.html" class="izq">
+            <img src="icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
+        </a>
         <ul>
             <li>
                 <a href="index.html">Inicio</a>
@@ -35,63 +34,89 @@
             <li>
                 <a href="views/contacto.html">Contacto</a>
             </li>
+            <li>
+                <input type="text" placeholder="Buscar...">
+                
+            </li>
         </ul>
-        <input type="text" placeholder="Search..">
-        <img src="icons/Search-icon.png" alt="icono de busqueda">
     </nav>
-    <br>
+    
     <main>
-        <section>
-            <video width="400" autoplay muted>
+        <section class="video">
+            <video width="500px" autoplay muted>
                 <source src="video/presentacion-peluqueria.mp4" type="video/mp4">
             </video>
            
         </section>
-        <section>
-            <h2>HISTORIA</h2>
-            <p class="texto-izq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, 
+        <section class="inline-texto-img mitad-pantalla">
+            <div class="mitad-pantalla">
+                <h2>HISTORIA</h2>
+                <p class="inline-texto-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, 
                 facere nobis quos nostrum dolores ea ex magni ullam vero recusandae
                  omnis inventore cumque? 
                 Veritatis, perspiciatis sed? Tenetur nisi tempore alias.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis excepturi 
-            enim beatae omnis vitae quam necessitatibus molestiae cupiditate ex, rem quod voluptatibus dolore, repudiandae quia voluptas! Iste, laudantium animi.</p>
-                <a href="https://ibb.co/23sbvXQ"><img src="https://i.ibb.co/hFZqBpj/historia-pelu.jpg" alt="historia-pelu" border="0" width="40%" height="20%"></a>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis excepturi 
+                enim beatae omnis vitae quam necessitatibus molestiae cupiditate ex, rem quod voluptatibus dolore, 
+                repudiandae quia voluptas! Iste, laudantium animi.</p>
+            </div>
+            
+            <img class="floatDerecha" src="https://i.ibb.co/hFZqBpj/historia-pelu.jpg" 
+                alt="historia-pelu" border="0" width="40%" height="20%">
+                <!-- border="0" width="40%" height="20%" -->
             
         </section>
-        <section>
-            <h2>FUNDADOR</h2>
-            <a href="https://ibb.co/gTqDGFk"><img src="https://i.ibb.co/BZWgmK0/fundador.jpg" alt="fundador" border="0" width="40%" height="20%"></a>
+        <section class="inline-texto-img mitad-pantalla">
             
-            <p><b>Nombre del Fundador</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Tempora sunt, ipsam tempore unde in inventore voluptate possimus id saepe non ab 
-                obcaecati porro odit, quam nihil reprehenderit, eligendi consequuntur et?</p>
+                <img src="https://i.ibb.co/BZWgmK0/fundador.jpg" alt="fundador" border="0" width="40%" height="20%">
+                <div class="mitad-pantalla">
+                    <h2>FUNDADOR</h2>
+                    <p class="texto-der"><b>Nombre del Fundador</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempora sunt, ipsam tempore unde in inventore voluptate possimus id saepe non ab 
+                    obcaecati porro odit, quam nihil reprehenderit, eligendi consequuntur et?</p>  
+                </div>
+            
         </section>
-        <section>
+        <section >
             <h2>SERVICIOS</h2>
-            <a href="https://ibb.co/jhgYyT5"><img src="https://i.ibb.co/wyMqSRL/servicios-peinados.jpg" alt="servicios-peinados" border="0" width="20%" height="20%"></a>
-            
-            <p><b>PEINADOS: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Obcaecati quae, deserunt veniam ullam error magni, aspernatur explicabo 
-                suscipit officiis saepe unde quo in veritatis perspiciatis. 
-                Fuga totam aut laborum esse?</p>
-                <a href="https://ibb.co/99YcWLw"><img src="https://i.ibb.co/xS5X60m/servicios-coloracion.jpg" alt="servicios-coloracion" border="0" width="20%" height="20%"></a>
-            
-            <p><b>COLORACION: </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Iste nesciunt quo soluta repellendus at autem ea animi eveniet aliquam rem.
-                 Pariatur nobis laborum quia animi quo adipisci iusto consequuntur? Culpa!</p>
-                <a href="https://ibb.co/ydx7ykc"><img src="https://i.ibb.co/cksVF8S/servicios-corte.jpg" alt="servicios-corte" border="0" width="20%" height="20%"></a>    
-            
-            <p><b>CORTE: </b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consectetur 
-                earum incidunt unde vero facilis magnam labore quibusdam similique optio blanditiis sunt 
-                natus modi consequatur, illo expedita nobis et atque.</p>
+            <div class="inline-texto-img ">
+                <div class="tipo-card">
+                    <img src="https://i.ibb.co/wyMqSRL/servicios-peinados.jpg" 
+                    alt="servicios-peinados" border="0" width="80%" height="450px">
+               
+                    <p><b>PEINADOS: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Obcaecati quae, deserunt veniam ullam error magni, aspernatur explicabo 
+                    suscipit officiis saepe unde quo in veritatis perspiciatis. 
+                    Fuga totam aut laborum esse?</p>
+                </div>
                 
-        </section>
-    </main>
-    <footer>
+                <div class="tipo-card">
+                    <img src="https://i.ibb.co/xS5X60m/servicios-coloracion.jpg" 
+                    alt="servicios-coloracion" border="0" width="80%" height="450px">
+                
+                    <p><b>COLORACION: </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Iste nesciunt quo soluta repellendus at autem ea animi eveniet aliquam rem.
+                    Pariatur nobis laborum quia animi quo adipisci iusto consequuntur? Culpa!</p>
+                </div>
 
-        <a href="https://web.whatsapp.com/" target="_blank">
-            <img src="icons/WhatsApp.webp" alt="icono de WhatsApp">
-        </a>
+                <div class="tipo-card">
+                    <img src="https://i.ibb.co/cksVF8S/servicios-corte.jpg" 
+                    alt="servicios-corte" border="0" width="80%" height="450px">
+                
+                    <p><b>CORTE: </b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consectetur 
+                    earum incidunt unde vero facilis magnam labore quibusdam similique optio blanditiis sunt 
+                    natus modi consequatur, illo expedita nobis et atque.</p>
+                </div>
+            </div>   
+        </section>
+        <div class="position-fixed">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="icons/WhatsApp.webp" alt="icono de WhatsApp">
+            </a>
+        </div>
+    </main>
+    <footer class="bg-footer">
+
+        
         
         <a href="https://www.instagram.com/" target="_blank">
             <img src="icons/Instagram-icon.png" alt="icono de instagram">

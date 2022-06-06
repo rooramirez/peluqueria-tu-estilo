@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 /*
+
+ver- diferencias entre los diferente navegadores navegadores y position: fixed
+*/
 * {
     margin: 0;
     padding: 0;
 }
-ver- diferencias entre los diferente navegadores navegadores
-*/
 
 html{
     font-size: 62.5%;
@@ -14,44 +15,115 @@ html{
     line-height: 2.5rem;
     font-style: normal;
     font-weight: 400;
+    color: rgb(244, 232, 232);   
 }
 
+
+header h1 {
+        margin: 20px;
+        
+    }
+header label{
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+}
 h1{
     font-size: 5rem;
+    padding: 2rem;
 }
 
 h2{
     font-size: 3rem;
+    padding: 2rem;
 }
 
 h3{
     font-size: 2.5rem;
+    padding: 2rem;
 }
 
-p{
+header, section, p{
     font-family: 'Roboto', sans-serif;
     line-height: 3rem;
     font-style: italic;
     font-weight: 400;
     font-size: 2rem;
-}
-.texto-izq{
-    text-align: left;
+    margin: 1rem;
+    padding: 10px;
 }
 
+
 nav{
-    background-color: rgb(77, 216, 13, .5);
+    background-color:rgb(42, 228, 150, .5);
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
 }
     nav ul{
         list-style: none;
+        display: flex;
+        
+        
     }
         nav ul li a{
             font-size: 2.2rem;
-            text-decoration: none;
-            color: rgb(42, 144, 228);
+            text-decoration: none;         
             font-family: 'Montserrat', sans-serif;
+            line-height: 3rem;
+            padding: 1rem;
         }
 
 body{
-    background-image: url(../img/fondoBody.html);
+    background-image: url(img/oriental-tiles.png);
+    background-attachment: fixed;
 }
+
+footer a {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* inicio de selectores de clase */
+
+.inline-texto-img{
+    display: flex;
+    align-items: flex-start;  
+    width: fit-content;
+}
+
+.mitad-pantalla{
+    padding: 30px;
+    margin: 10px;
+    
+}
+
+.texto-der{
+    flex: 1;
+    padding: 10px;
+}
+
+.video{
+    width: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+.bg-footer{
+    background-color: rgb(17, 238, 17, 0.5);
+    
+}
+
+.position-fixed{
+    position: fixed;
+   top: 500px;
+   right: 100px;
+}
+
+.tipo-card{
+    display: block;
+    
+}
+    
+
+    
