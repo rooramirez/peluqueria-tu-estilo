@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-/*
 
-ver- diferencias entre los diferente navegadores navegadores y position: fixed
-*/
 * {
     margin: 0;
     padding: 0;
@@ -15,19 +12,14 @@ html{
     line-height: 2.5rem;
     font-style: normal;
     font-weight: 400;
-    color: rgb(244, 232, 232);   
+    color: black;   
 }
 
-
-header h1 {
-        margin: 20px;
-        
-    }
-header label{
+/* header label{
     display: flex;
     justify-content: right;
     padding: 1rem;
-}
+} */
 h1{
     font-size: 5rem;
     padding: 2rem;
@@ -40,31 +32,35 @@ h2{
 
 h3{
     font-size: 2.5rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-header, section, p{
+ p{
     font-family: 'Roboto', sans-serif;
     line-height: 3rem;
     font-style: italic;
     font-weight: 400;
     font-size: 2rem;
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 10px;
 }
 
 
 nav{
-    background-color:rgb(42, 228, 150, .5);
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(229, 108, 171, 0.5);
+    /* padding: 1rem, 0rem; */
     display: flex;
     justify-content: end;
+
 }
     nav ul{
         list-style: none;
         display: flex;
-        
-        
+        color: black;
+        /* position: fixed;
+        width: 100%; */
     }
         nav ul li a{
             font-size: 2.2rem;
@@ -72,19 +68,66 @@ nav{
             font-family: 'Montserrat', sans-serif;
             line-height: 3rem;
             padding: 1rem;
+            
         }
 
+        nav ul li a:hover{
+            color: rgb(234, 12, 182);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+       
+/* 
 body{
     background-image: url(img/oriental-tiles.png);
     background-attachment: fixed;
 }
+*/
 
-footer a {
-    padding: 10px;
-    margin: 10px;
+
+/* footer */
+
+footer p{
+    line-height: 1rem;
+    font-size: 1.5rem;
 }
 
+footer a{
+    position: absolute;
+    justify-items: center;
+}
+
+
+
 /* inicio de selectores de clase */
+.padding-footer{
+    padding-left: 50px;
+    
+}
+
+.my-name{
+    position: absolute;
+    
+    right: 10%;
+}
+
+.bg-img-index{
+    background-image: url(../peluqueria-tu-estilo/img/ramo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 800px;
+    width: auto;
+    /* overflow: hidden; */
+    /* width: 100%; */
+    
+    
+}
+
+.bg-fundador{
+    background-color: rgba(211, 54, 151, 0.96);
+    padding: 5rem;
+}
 
 .inline-texto-img{
     display: flex;
@@ -96,6 +139,10 @@ footer a {
     padding: 30px;
     margin: 10px;
     
+}
+
+.servicios{
+    padding: 5rem;
 }
 
 .texto-der{
@@ -110,8 +157,8 @@ footer a {
 }
 
 .bg-footer{
-    background-color: rgb(17, 238, 17, 0.5);
-    
+    background-color: rgba(213, 59, 218, 0.67);
+    height: 200px;
 }
 
 .position-fixed{
@@ -124,6 +171,70 @@ footer a {
     display: block;
     
 }
+
+/* inicio de estilo para turnos*/
+.turnos{
+    display: flex;
+    width: fit-content;
+    height: 700px;
+    margin: 10rem;
+}
+
+.padding-texto{
+    padding: 3rem;
+}
+
+.centrar-titulo{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.tamaño-letra-link{
+    font-size: 2rem;
+    padding: 3rem;
+}
+/* fin de turnos*/
+
+/* inicio de estilo para contacto*/
+
+.contacto-iconos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.iconos{
+    margin-bottom: 50px;
+    padding: 100px;
+    border: solid;
+    align-items: center;
+   
+}
+
+/* inicio de selectores id */
+
+#subtitulo-en-bg{
+    color:  rgb(223, 68, 169);
+    font-size: 5rem;
+    /* text-align: center; */
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    border: solid;
+   
+}
+
+#titulo-en-bg{
+    
+    color: rgb(232, 19, 104);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    position: sticky;
+    top: 55%;
+    left: 60%;
+}
+
+
     
 
     
