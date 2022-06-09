@@ -111,7 +111,7 @@ footer a{
 }
 
 .bg-img-index{
-    background-image: url(../peluqueria-tu-estilo/img/ramo.jpg);
+    background-image: url("https://i.ibb.co/BrDKb6x/ramo.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -210,6 +210,9 @@ footer a{
     font-size: 2.5rem;
     color: antiquewhite;
 }
+.letra-form{
+    font-size: 1.5rem;
+}
 
 .contacto-iconos{
     display: flex;
@@ -245,6 +248,37 @@ footer a{
 }
 
 /* fin de estilo para contacto*/
+
+/*inicio de estilo para tienda*/
+.iconos-tienda{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-tienda-individial{
+    padding: 30px, 30px, 0, 30px;
+    margin: 50px, 500px, 0, 50px;
+    
+}
+
+.fondo{
+    background-color: bisque;
+    
+}
+/*fin de estilo tienda*/
+
+/*inicio de estilo servicios*/
+.centrar-img{
+    display: flex;
+    justify-content: center;
+}
+
+.separar-img{
+    padding: 20px;
+}
+
+/*fin estilo servicios*/
+
 
 
 /* inicio de selectores id */

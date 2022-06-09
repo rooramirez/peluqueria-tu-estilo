@@ -35,50 +35,57 @@
                 </li>
             </ul>
         </nav> 
-        <h1>Tienda</h1>
+        <h1 class="centrar-titulo">Tienda</h1>
     </header>
     
     <br>
     <main>
-        <section>
-            <h3>Medios de pago:</h3>
-            <br>
-            <a href="https://www.visa.com.ar/" target="_blank">
-                <img src="../icons/credit-card-icon.png" alt="icono de tarjeta de credito">
-            </a>
-            <a href="https://rapipago.com.ar/rapipagoWeb/" target="_blank">
-                <img src="../icons/money-icon.png" alt="icono de efectivo">
-            </a>
-            <a href="https://www.mercadopago.com.ar/home" target="_blank">
-                <img src="../icons/wire-transfer-icon.png" alt="icno de transferencia bancaria">
-            </a>
+        <section class="fondo">
+            <h3 >Medios de pago:</h3>
+           <div class="iconos-tienda">
+                <a class="iconos-tienda-individial" href="https://www.visa.com.ar/" target="_blank">
+                    <img  src="../icons/credit-card-icon.png" alt="icono de tarjeta de credito">
+                    <p>Tarjetas de credito</p>
+                </a>
+                <a class="iconos-tienda-individial" href="https://rapipago.com.ar/rapipagoWeb/" target="_blank">
+                    <img  src="../icons/money-icon.png" alt="icono de efectivo">
+                    <p>Efectivo / Debito</p>
+                </a>
+                <a class="iconos-tienda-individial" href="https://www.mercadopago.com.ar/home" target="_blank">
+                    <img  src="../icons/wire-transfer-icon.png" alt="icno de transferencia bancaria">
+                    <p>Transferencia bancaria</p>
+                </a>
+           </div>
+            
         </section>
         <section>
             <h3>Detalle de pedido:</h3>
-            <form action="pedido.js" id="pedido">
-                <fieldset>
-                    <legend>Pedido</legend>
-                    <select name="productos" id="">
-                        <option value="shampoo">Shampoo</option>
-                        <option value="acondicionador">Acondicionador</option>
-                        <option value="accesorioCabello">Accesorio para el Cabello</option>
-                    </select>
-                    <label for="cant">Cantidad</label>
-                    <input type="number" id="cant">
-                    <br>
-                    <label for="medioDePago">Medio de pago:</label>
-                    <br>
-                    <label for="transf">Transferencia Bancaria</label>
-                    <input type="radio" id="transf" name="pago" value="transferencia">
-                    <label for="cred">Tarjeta de credito</label>
-                    <input type="radio" id="cred" name="pago" value="credito">
-                    <label for="deb">Debito</label>
-                    <input type="radio" id="deb" name="pago" value="debito">
-                    <br>
-                    <input type="reset" value="Cancelar">
-                    <input type="submit" value="Enviar">
-                    
-                </fieldset>
+            <form class="style-form" action="pedido.js" id="pedido">
+                <div class="letra-form">
+                    <fieldset >
+                        <legend>Pedido</legend>
+                        <select name="productos" id="">
+                            <option value="shampoo">Shampoo</option>
+                            <option value="acondicionador">Acondicionador</option>
+                            <option value="accesorioCabello">Accesorio para el Cabello</option>
+                        </select>
+                        <label for="cant">Cantidad</label>
+                        <input type="number" id="cant">
+                        <br>
+                        <label for="medioDePago">Medio de pago:</label>
+                        <br>
+                        <label for="transf">Transferencia Bancaria</label>
+                        <input type="radio" id="transf" name="pago" value="transferencia">
+                        <label for="cred">Tarjeta de credito</label>
+                        <input type="radio" id="cred" name="pago" value="credito">
+                        <label for="deb">Debito</label>
+                        <input type="radio" id="deb" name="pago" value="debito">
+                        <br>
+                        <input type="reset" value="Cancelar">
+                        <input type="submit" value="Enviar">
+                        
+                    </fieldset>
+                </div>
             </form>
         </section>
     </main>
