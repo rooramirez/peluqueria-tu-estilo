@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../peluqueria-tu-estilo/hojaDeEstilo.css">
 </head>
 <body>
-    <header>
-
-        <nav>
+    <div class="contenedor">
+        <nav class="nav">
             <a href="index.html" class="izq">
                 <img src="icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
             </a>
+
+            <!-- <span class="menu-button">☰</span> -->
+
             <ul>
                 <li>
                     <a href="index.html">Inicio</a>
@@ -37,122 +39,98 @@
                 </li>
             </ul>
         </nav>
-
-    </header>
-    
-    <main>
-        <!--
-            <section class="video">
-            <video width="500px" autoplay muted>
-                <source src="video/presentacion-peluqueria.mp4" type="video/mp4">
-            </video>
-        -->
-        <section class="bg-img-index">
-            <h2 id="subtitulo-en-bg">Tu cabello es la corona que nunca te quitas.</h2>
-            <h1 id="titulo-en-bg">PELUQUERIA TU ESTILO</h1>
-
+        <main class="content">
+            <!--
+                <section class="video">
+                <video width="500px" autoplay muted>
+                    <source src="video/presentacion-peluqueria.mp4" type="video/mp4">
+                </video>
+            -->
+            <section class="bg-img-index">
+                <h2 id="subtitulo-en-bg">Tu cabello es la corona que nunca te quitas.</h2>
+                <h1 id="titulo-en-bg">PELUQUERIA TU ESTILO</h1>
+            </section>
             
-           <!-- <div class="img-fondo">
-            <img src="img/ramo.jpg" alt="">
-           </div>  -->
-           
-        </section>
-           
-        </section>
-        <section class="inline-texto-img mitad-pantalla">
-            <div class="mitad-pantalla">
-                <h2>HISTORIA</h2>
-                <p class="inline-texto-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, 
-                facere nobis quos nostrum dolores ea ex magni ullam vero recusandae
-                 omnis inventore cumque? 
-                Veritatis, perspiciatis sed? Tenetur nisi tempore alias.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis excepturi 
-                enim beatae omnis vitae quam necessitatibus molestiae cupiditate ex, rem quod voluptatibus dolore, 
-                repudiandae quia voluptas! Iste, laudantium animi.</p>
-            </div>
-            
-            <img class="floatDerecha" src="https://i.ibb.co/hFZqBpj/historia-pelu.jpg" 
-                alt="historia-pelu" border="0" width="40%" height="20%">
-                
-            
-        </section>
-        <section class="inline-texto-img bg-fundador">
-            
-                <img src="https://i.ibb.co/BZWgmK0/fundador.jpg" alt="fundador" border="0" width="40%" height="20%">
+            </section>
+            <section class="inline-texto-img mitad-pantalla">
                 <div class="mitad-pantalla">
-                    <h2>FUNDADOR</h2>
-                    <p class="texto-der"><b>Nombre del Fundador</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Tempora sunt, ipsam tempore unde in inventore voluptate possimus id saepe non ab 
-                    obcaecati porro odit, quam nihil reprehenderit, eligendi consequuntur et?</p>  
-                </div>
-        </section>
-        <section class="servicios">
-            <h2>SERVICIOS</h2>
-            <div class="inline-texto-img ">
-                <div class="tipo-card">
-                    <img src="https://i.ibb.co/wyMqSRL/servicios-peinados.jpg" 
-                    alt="servicios-peinados" border="0" width="80%" height="400px">
-               
-                    <p><b>PEINADOS: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Obcaecati quae, deserunt veniam ullam error magni, aspernatur explicabo 
-                    suscipit officiis saepe unde quo in veritatis perspiciatis. 
-                    Fuga totam aut laborum esse?</p>
+                    <h2>HISTORIA</h2>
+                    <p class="inline-texto-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, 
+                    facere nobis quos nostrum dolores ea ex magni ullam vero recusandae
+                    omnis inventore cumque? 
+                    Veritatis, perspiciatis sed? Tenetur nisi tempore alias.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis excepturi 
+                    enim beatae omnis vitae quam necessitatibus molestiae cupiditate ex, rem quod voluptatibus dolore, 
+                    repudiandae quia voluptas! Iste, laudantium animi.</p>
                 </div>
                 
-                <div class="tipo-card">
-                    <img src="https://i.ibb.co/xS5X60m/servicios-coloracion.jpg" 
-                    alt="servicios-coloracion" border="0" width="80%" height="400px">
+                <img class="floatDerecha" src="https://i.ibb.co/hFZqBpj/historia-pelu.jpg" 
+                    alt="historia-pelu" border="0" width="80%" height="400px">
+                    
                 
-                    <p><b>COLORACION: </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Iste nesciunt quo soluta repellendus at autem ea animi eveniet aliquam rem.
-                    Pariatur nobis laborum quia animi quo adipisci iusto consequuntur? Culpa!</p>
-                </div>
-
-                <div class="tipo-card">
-                    <img src="https://i.ibb.co/cksVF8S/servicios-corte.jpg" 
-                    alt="servicios-corte" border="0" width="80%" height="400px">
+            </section>
+            <section class="inline-texto-img bg-fundador">
                 
-                    <p><b>CORTE: </b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consectetur 
-                    earum incidunt unde vero facilis magnam labore quibusdam similique optio blanditiis sunt 
-                    natus modi consequatur, illo expedita nobis et atque.</p>
-                </div>
-            </div>   
-        </section>
-        <div class="position-fixed">
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="icons/WhatsApp.webp" alt="icono de WhatsApp">
-            </a>
-        </div>
-    </main>
-    
-    <footer class="bg-footer">
+                    <img src="https://i.ibb.co/BZWgmK0/fundador.jpg" alt="fundador" border="0" width="80%" height="400px">
+                    <div class="mitad-pantalla">
+                        <h2>FUNDADOR</h2>
+                        <p class="texto-der"><b>Nombre del Fundador</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempora sunt, ipsam tempore unde in inventore voluptate possimus id saepe non ab 
+                        obcaecati porro odit, quam nihil reprehenderit, eligendi consequuntur et?</p>  
+                    </div>
+            </section>
+            <section class="servicios">
+                <h2>SERVICIOS</h2>
+                <div class="inline-texto-img ">
+                    <div class="tipo-card">
+                        <img src="https://i.ibb.co/wyMqSRL/servicios-peinados.jpg" 
+                        alt="servicios-peinados" border="0" width="80%" height="400px">
+                
+                        <p><b>PEINADOS: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Obcaecati quae, deserunt veniam ullam error magni, aspernatur explicabo 
+                        suscipit officiis saepe unde quo in veritatis perspiciatis. 
+                        Fuga totam aut laborum esse?</p>
+                    </div>
+                    
+                    <div class="tipo-card">
+                        <img src="https://i.ibb.co/xS5X60m/servicios-coloracion.jpg" 
+                        alt="servicios-coloracion" border="0" width="80%" height="400px">
+                    
+                        <p><b>COLORACION: </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Iste nesciunt quo soluta repellendus at autem ea animi eveniet aliquam rem.
+                        Pariatur nobis laborum quia animi quo adipisci iusto consequuntur? Culpa!</p>
+                    </div>
 
-        <!-- <a href="https://www.instagram.com/" target="_blank">
-            <img src="icons/Instagram-icon.png" alt="icono de instagram">
-        </a>
-
-        <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank">
-            <img src="icons/social-facebook-button-blue-icon.png" alt="icono de facebook">
-        </a>
-        
-        <a href="https://goo.gl/maps/vo9ZR5jNAijY7hXa8" target="_blank">
-            <img src="icons/Maps-Location-icon.png" alt="icono de ubicacion">
-        </a> -->
-        <div class="padding-footer">
-            <h3>Peluqueria Tu Estilo</h3>
-            <div>
-                <p>Neiva 5627 - Villa El Libertador</p>
-                <p>Cordoba, Capital</p>
-                <p>Argentina</p>
+                    <div class="tipo-card">
+                        <img src="https://i.ibb.co/cksVF8S/servicios-corte.jpg" 
+                        alt="servicios-corte" border="0" width="80%" height="400px">
+                    
+                        <p><b>CORTE: </b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consectetur 
+                        earum incidunt unde vero facilis magnam labore quibusdam similique optio blanditiis sunt 
+                        natus modi consequatur, illo expedita nobis et atque.</p>
+                    </div>
+                </div>   
+            </section>
+            <div class="position-fixed">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="icons/WhatsApp.webp" alt="icono de WhatsApp">
+                </a>
             </div>
-        </div>
+        </main>
+        <footer class="footer">
 
-        <div class="my-name">
-            <p><b>By Rocio Ramirez</b></p>
-        </div>
-        
-    </footer>
+            <div class="padding-footer">
+                <h3>Peluqueria Tu Estilo</h3>
+                <div>
+                    <p>Neiva 5627 - Villa El Libertador</p>
+                    <p>Cordoba, Capital</p>
+                    <p>Argentina</p>
+                </div>
+            </div>
 
-    
+                <p><b>By Rocio Ramirez</b></p>
+            
+        </footer>
+    </div>
 </body>
 </html>

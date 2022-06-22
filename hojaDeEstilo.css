@@ -1,6 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+html{
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+body {
+    margin: 0;
+}
+.content {
+    grid-area: content;
+    margin: 8px;
+   
+}
+
+/* NAV area */
+
+.nav {
+    grid-area: nav;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(229, 108, 171, 0.5);
+    justify-content: end;
+}
+    nav ul{
+        list-style: none;
+        color: black;
+    }
+    nav ul li a{
+        text-decoration: none;         
+        font-family: 'Montserrat', sans-serif;
+
+    }
+/*=------ MAIN-------------*/
+
+/*Inicio primera section*/
+.bg-img-index{
+    background-image: url("https://i.ibb.co/BrDKb6x/ramo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: auto;
+}
+#subtitulo-en-bg{
+    color:  rgb(53, 8, 37);
+    /* text-align: center; */
+   
+}
+#titulo-en-bg{
+    
+    color: rgb(232, 19, 104);
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+}
+.position-fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+/*Fin primera section*/
+/*Inicio section fundador*/
+.bg-fundador{
+    background-color: rgba(211, 54, 151, 0.96);
+    padding-left: 8px;   
+}
+/*Fin section fundador*/
+.footer {
+    grid-area: footer;
+    background-color: rgba(213, 59, 218, 0.67);
+    padding-left: 8px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content" 
+        "footer";
+}
+
+
+/*Media query*/
+
+@media (min-width: 1024px) {
+    .contenedor {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "nav     nav"
+        "content content"
+        "footer      footer";
+        
+    }
+    .content {
+        margin: 0
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -160,7 +268,7 @@ footer a{
 
 .position-fixed{
     position: fixed;
-   top: 500px;
+   bottom: 100px;
    right: 100px;
 }
 
@@ -305,6 +413,4 @@ footer a{
 }
 
 
-    
-
-    
+  }
