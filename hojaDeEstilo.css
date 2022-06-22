@@ -63,6 +63,7 @@ body {
     right: 10px;
 }
 /*Fin primera section*/
+
 /*Inicio section fundador*/
 .bg-fundador{
     background-color: rgba(211, 54, 151, 0.96);
@@ -84,6 +85,9 @@ body {
         "footer";
 }
 
+.form-margin{
+   
+}
 
 /*Media query*/
 
