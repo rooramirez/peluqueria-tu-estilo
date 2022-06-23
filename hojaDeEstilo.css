@@ -14,7 +14,9 @@ body {
 }
 .content {
     grid-area: content;
-    margin: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
    
 }
 
@@ -38,7 +40,7 @@ body {
     }
 /*=------ MAIN-------------*/
 
-/*Inicio primera section*/
+/*Inicio primera section (index)*/
 .bg-img-index{
     background-image: url("https://i.ibb.co/BrDKb6x/ramo.jpg");
     background-attachment: fixed;
@@ -85,9 +87,29 @@ body {
         "footer";
 }
 
-.form-margin{
-   
+/*bg para diferenciar section*/
+
+.section-bg-color{
+    background-color: bisque;
+    
 }
+
+/*Estilo para Servicios*/
+
+/*sacamos margin de p y agregamos padding-bottom en Servicios*/
+p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+/*imagenes de servicio*/
+.centrar-img{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*Fin del estilo para Servicios*/
 
 /*Media query*/
 
@@ -373,7 +395,7 @@ footer a{
     
 }
 
-.fondo{
+.section-bg-color{
     background-color: bisque;
     
 }
