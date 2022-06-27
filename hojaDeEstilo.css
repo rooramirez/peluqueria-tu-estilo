@@ -20,6 +20,7 @@ body {
    
 }
 
+
 /* NAV area */
 
 .nav {
@@ -103,15 +104,52 @@ p {
 }
 
 /*imagenes de servicio*/
-.centrar-img{
-    width: 96%;
-    max-width: 960px;
-    margin: 0 auto;
+
+
+.responsive-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    
+}
+
+.img-responsive{
+    height: 80vh;
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+
 }
 
 /*Fin del estilo para Servicios*/
 
-/*Media query*/
+/*inicio estilo tienda*/
+
+.style-form{
+    margin-bottom: 0.5rem;
+}
+
+/*fin estilo tienda*/
+
+/*inicio de estilo para contacto*/
+.bg-contacto-img{
+    background-image: url(https://cdn.thecolvinco.com/media/COLVIN_HP_Carrousel-Commitment.jpg);
+    background-size: 100%;
+    background-repeat:repeat;
+    height: 100vh;
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.bg-contacto{
+    text-align: center;
+    background-color: rgba(211, 54, 151, 0.96);
+}
+
+/*fin de estilo para contacto*/
+
+
+/*=============Media query=================*/
 
 @media (min-width: 1024px) {
     .contenedor {
