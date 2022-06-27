@@ -33,6 +33,7 @@ body {
     nav ul{
         list-style: none;
         color: black;
+        margin: 0;
     }
     nav ul li a{
         text-decoration: none;         
