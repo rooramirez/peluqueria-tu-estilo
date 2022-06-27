@@ -61,55 +61,58 @@
             <section class="bg-contacto">
                 <h3 class="centrar-titulo">¿Como llegar?</h3>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.664708548472!2d-64.2213816!3d-31.478408299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3c728a2e173%3A0xa86e160165971a0a!2sNeiva%205627%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1654021850838!5m2!1ses-419!2sar" 
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.664708548472!2d-64.2213816!3d-31.478408299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3c728a2e173%3A0xa86e160165971a0a!2sNeiva%205627%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1654021850838!5m2!1ses-419!2sar" 
                       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
     
-            <section class="">
-                <h3 class="centrar-titulo">¿Como podemos ayudarte?</h3>
-                <form class="style-form" action="envio.js" id="contacto">
-                    <div class="letra-form">
-                        <!-- <fieldset> -->
-                            <legend>Informacion Personal</legend>
-                            <label for="name">Nombre: </label>
-                            <input type="text" id="name" placeholder="Cosme">
+            <section class="responsive-section">
+                <h3 class="centrar-titulo">¿Como podemos ayudarte?</h3>     
+                <div class="centrar-form">
+                    
+                    <form class="style-form" action="envio.js" id="contacto">
+                        <div class="letra-form">
+                            <!-- <fieldset> -->
+                                <legend>Informacion Personal</legend>
+                                <label for="name">Nombre: </label>
+                                <input type="text" id="name" placeholder="Cosme">
+                                <br>
+                                <label for="lastName">Apellido: </label>
+                                <input type="text" id="lastName" placeholder="Fulanito">
+                                <br>
+                                <label for="genero">Genero :</label>
+                                <label for="fem">Femenino</label>
+                                <input type="radio" id="fem" name="sex" value="femenino">
+                                <label for="masc">Masculino</label>
+                                <input type="radio" id="masc" name="sex" value="masculino">
+                                <label for="otro">Otro</label>
+                                <input type="radio" id="otro" name="sex" value="otro">
+                                <br>
+                                <label for="edad">Edad :</label>
+                                <select name="edad" id="">
+                                    <option value="">...</option>
+                                    <option value="menor">Entre 13 y 17 años</option>
+                                    <option value="mayor Joven">Entre 18 y 25 años</option>
+                                    <option value="adulto joven">Entre 26 y 34 años</option>
+                                    <option value="adulto">35 ó más</option>
+                                </select>
+                                <br>
+                                <label for="email">Correo Electronico: </label>
+                                <input type="email" id="email" placeholder="cosmefulanito2.0@gmail.com">   
+                                <br>
+                                <label for="promos">Quiero recibir emais con las promociones</label>
+                                <input type="checkbox" id="promos" value="si">
+                            <!-- </fieldset>
+                            <fieldset> -->
+                                <legend >Consulta</legend>
+                                <textarea class="margin-textarea" name="" id="" cols="50" rows="25" placeholder="Dejanos tu consulta..."></textarea>
+                            <!-- </fieldset> -->
                             <br>
-                            <label for="lastName">Apellido: </label>
-                            <input type="text" id="lastName" placeholder="Fulanito">
-                            <br>
-                            <label for="genero">Genero :</label>
-                            <label for="fem">Femenino</label>
-                            <input type="radio" id="fem" name="sex" value="femenino">
-                            <label for="masc">Masculino</label>
-                            <input type="radio" id="masc" name="sex" value="masculino">
-                            <label for="otro">Otro</label>
-                            <input type="radio" id="otro" name="sex" value="otro">
-                            <br>
-                            <label for="edad">Edad :</label>
-                            <select name="edad" id="">
-                                <option value="">...</option>
-                                <option value="menor">Entre 13 y 17 años</option>
-                                <option value="mayor Joven">Entre 18 y 25 años</option>
-                                <option value="adulto joven">Entre 26 y 34 años</option>
-                                <option value="adulto">35 ó más</option>
-                            </select>
-                            <br>
-                            <label for="email">Correo Electronico: </label>
-                            <input type="email" id="email" placeholder="cosmefulanito2.0@gmail.com">   
-                            <br>
-                            <label for="promos">Quiero recibir emais con las promociones</label>
-                            <input type="checkbox" id="promos" value="si">
-                        <!-- </fieldset>
-                        <fieldset> -->
-                            <legend >Consulta</legend>
-                            <textarea class="margin-textarea" name="" id="" cols="50" rows="25" placeholder="Dejanos tu consulta..."></textarea>
-                        <!-- </fieldset> -->
-                        <br>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Cancelar">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Cancelar">
                     </div>
                 </form>
+            </div>
             </section>
         </main>
     
