@@ -1,108 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda-Peluqueria-Tu-Estilo</title>
-    <link rel="shortcut icon" href="../icons/favicom.png">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--CSS propio-->
+    <link rel="shortcut icon" href="..icons/favicom.png">
     <link rel="stylesheet" href="../hojaDeEstilo.css">
-</head>
-<body>
-    <div class="contenedor">
-        <header>
-            <nav class="nav">
-                <a href="../index.html">
-                    <img src="../icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
-                </a>  
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="../views/turnos.html">Turnos</a>
-                    </li>
-                    <li>
-                        <a href="../views/servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="../views/tienda.html">Tienda</a>
-                    </li>
-                    <li>
-                        <a href="../views/contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <input type="search" placeholder="Buscar...">
-                    </li>
+    <title>Peluqueria-Tu-Estilo</title>
+  </head>
+  <body>
+
+    <header>
+            <!--inicio de navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/turnos.html">Turnos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                </li>
                 </ul>
-            </nav> 
-            
-        </header>
-        
-        <main class="content">
-            <h1 class="centrar-titulo">Tienda</h1>
-            <section class="section-bg-color">
-                <h3 >Medios de pago:</h3>
-               <div class="iconos-tienda">
-                    <a class="iconos-tienda-individial" href="https://www.visa.com.ar/" target="_blank">
-                        <img  src="../icons/credit-card-icon.png" alt="icono de tarjeta de credito">
-                        <p>Tarjetas de credito</p>
-                    </a>
-                    <a class="iconos-tienda-individial" href="https://rapipago.com.ar/rapipagoWeb/" target="_blank">
-                        <img  src="../icons/money-icon.png" alt="icono de efectivo">
-                        <p>Efectivo / Debito</p>
-                    </a>
-                    <a class="iconos-tienda-individial" href="https://www.mercadopago.com.ar/home" target="_blank">
-                        <img  src="../icons/wire-transfer-icon.png" alt="icno de transferencia bancaria">
-                        <p>Transferencia bancaria</p>
-                    </a>
-               </div>
-                
-            </section>
-            <section>
-                <h3>Detalle de pedido:</h3>
-                <form class="style-form" action="pedido.js" id="pedido">
-                    <div class="letra-form">
-                        <fieldset >
-                            <legend>Pedido</legend>
-                            <select name="productos" id="">
-                                <option value="shampoo">Shampoo</option>
-                                <option value="acondicionador">Acondicionador</option>
-                                <option value="accesorioCabello">Accesorio para el Cabello</option>
-                            </select>
-                            <label for="cant">Cantidad</label>
-                            <input type="number" id="cant">
-                            <br>
-                            <label for="medioDePago">Medio de pago:</label>
-                            <br>
-                            <label for="transf">Transferencia Bancaria</label>
-                            <input type="radio" id="transf" name="pago" value="transferencia">
-                            <label for="cred">Tarjeta de credito</label>
-                            <input type="radio" id="cred" name="pago" value="credito">
-                            <label for="deb">Debito</label>
-                            <input type="radio" id="deb" name="pago" value="debito">
-                            <br>
-                            <input type="reset" value="Cancelar">
-                            <input type="submit" value="Enviar">
-                            
-                        </fieldset>
-                    </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-            </section>
-        </main>
-       
-        <footer class="footer">
-            <div class="padding-footer">
-                <h3>Peluqueria Tu Estilo</h3>
-                <div>
-                    <p>Neiva 5627 - Villa El Libertador</p>
-                    <p>Cordoba, Capital</p>
-                    <p>Argentina</p>
-                </div>
-                <p><b>By Rocio Ramirez</b></p>
             </div>
-        </footer>
-    </div>
-    
-</body>
+            </div>
+        </nav>
+      <!--fin de navbar-->
+    </header>
+    <main>
+
+    </main>
+    <!--footer propio-->
+    <footer class="footer">
+
+        <div class="padding-footer">
+            <h3>Peluqueria Tu Estilo</h3>
+            <div>
+                <p>Neiva 5627 - Villa El Libertador</p>
+                <p>Cordoba, Capital</p>
+                <p>Argentina</p>
+            </div>
+            <p class="margin-footer"><b>By Rocio Ramirez</b></p>
+        </div>
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>

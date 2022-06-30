@@ -1,7 +1,8 @@
 
 
 .bg-gradient{
-    background: linear-gradient(to right rgb(216, 155, 165), rgb(180, 49, 71));
+    /* background: linear-gradient(to right rgb(216, 155, 165), rgb(180, 49, 71)); */
+    border: solid;
     
 }
 
@@ -29,13 +30,38 @@ https://i.ibb.co/hWBHGVY/3.jpg */
 
 /*estilo para subtitulo*/
 #subtitulo-en-bg{
-    color:  rgb(223, 68, 169);
-    font-size: 5rem;
+    color:  rgb(0, 0, 0);
+    font-size: 4rem;
     /* text-align: center; */
-    position: absolute;
-    top: 80px;
+    /* position: absolute; */
+    /* top: 80px; */
+    top: 40%;
     left: 10%;
     border: solid;
-
+    
 }
 /*fin de subtitulo*/
+
+/*CSS para titulo*/
+h1{
+    margin-left: 10%;
+    
+}
+/*fin css para titulo*/
+
+/*Cards*/
+.img-card{
+   
+}
+
+/*footer*/
+.footer {
+    grid-area: footer;
+    background-color: rgba(213, 59, 218, 0.67);
+    padding-left: 8px;
+    
+}
+/*se agrega margin al p, para que no quede una linea blanca debajo del footer*/
+.margin-footer{
+    margin-bottom: 0;
+}
