@@ -53,7 +53,72 @@
       <!--fin de navbar-->
     </header>
     <main>
-
+        <section class="carrusel">
+            <h3>PRODUCTOS PERFECT HAIR</h3>
+        </section>
+        <section>
+            <h3 >Medios de pago:</h3>
+            <div class="iconos-tienda">
+                 <a class="iconos-tienda-individial transform" href="https://www.visa.com.ar/" target="_blank">
+                     <img  src="../icons/credit-card-icon.png" alt="icono de tarjeta de credito">
+                     <p>Tarjetas de credito</p>
+                 </a>
+                 <a class="iconos-tienda-individial transform" href="https://rapipago.com.ar/rapipagoWeb/" target="_blank">
+                     <img  src="../icons/money-icon.png" alt="icono de efectivo">
+                     <p>Efectivo / Debito</p>
+                 </a>
+                 <a class="iconos-tienda-individial transform" href="https://www.mercadopago.com.ar/home" target="_blank">
+                     <img  src="../icons/wire-transfer-icon.png" alt="icno de transferencia bancaria">
+                     <p>Transferencia bancaria</p>
+                 </a>
+            </div>
+        </section>
+        <section>
+            <h3>Detalle de pedido:</h3>
+            <!--inicio de formulario-->
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-12">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Producto</option>
+                            <option value="1">Shampoo</option>
+                            <option value="2">Acondicionador</option>
+                            <option value="3">Accesorio para el cabello</option>
+                          </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="inputPassword4" class="form-label">Cantidad</label>
+                      <input type="number" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="medioDePago">Medio de pago:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Transferencia Bancaria
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Tarjeta de credito
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Tarjeta de Debito
+                            </label>
+                          </div>
+                    </div>
+                 
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form>
+            </div>
+            
+        </section>
     </main>
     <!--footer propio-->
     <footer class="footer">

@@ -1,9 +1,8 @@
 
 
 .bg-gradient{
-    /* background: linear-gradient(to right rgb(216, 155, 165), rgb(180, 49, 71)); */
-    border: solid;
-    
+    background: linear-gradient(to right rgb(216, 155, 165), rgb(180, 49, 71));
+    border: solid 10px;
 }
 
 /* https://i.ibb.co/BrDKb6x/ramo.jpg
@@ -64,4 +63,76 @@ h1{
 /*se agrega margin al p, para que no quede una linea blanca debajo del footer*/
 .margin-footer{
     margin-bottom: 0;
+}
+
+/*Estilo para tienda*/
+
+/*animacion*/
+@keyframes tiendaAnimate{
+    0%{background-image: url("https://i.ibb.co/597h4m2/1.jpg")}
+    25%{background-image: url("https://i.ibb.co/ws49bYL/3.jpg")}
+    50%{background-image: url("https://i.ibb.co/Csmst8w/2.jpg")}
+    75%{background-image: url("https://i.ibb.co/5R40B8j/4.jpg")}
+    100%{background-image: url("https://i.ibb.co/VTkD3GW/5.jpg")}
+}
+
+.carrusel{
+    animation-name: tiendaAnimate;
+    height: 70vh;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-repeat: initial;
+    background-size: contain;
+
+
+}
+/*fin de animacion*/
+
+/*transfor para iconos*/
+.transform :hover{
+    transform: translate(-20px, 20px);
+    transition: transform 2s;
+}
+.iconos-tienda{
+    display: flex;
+    justify-content: center;
+}
+.iconos-tienda-individial{
+    padding: 30px, 30px, 0, 30px;
+    margin: 50px, 500px, 0, 50px;
+    
+}
+
+/*inicio de estilo para contactos*/
+.contacto-iconos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.iconos{
+    margin-bottom: 50px;
+    padding: 100px;
+    align-items: center;   
+}
+
+.bg-contacto{
+    text-align: center;
+    background-color: rgba(211, 54, 151, 0.96);
+    font-size: 2rem;
+}
+
+.maps{
+    height: 50vh;
+    width: 50vw;
+}
+.style-form{
+    border: solid 5px ;
+    width: 60%;
+    background-color: bisque;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    padding: 25px;
+    display: flex;
 }
