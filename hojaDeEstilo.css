@@ -1,8 +1,7 @@
 
 
 .bg-gradient{
-    background: linear-gradient(to right rgb(216, 155, 165), rgb(180, 49, 71));
-    border: solid 10px;
+    background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%)!important;
 }
 
 /* https://i.ibb.co/BrDKb6x/ramo.jpg
