@@ -55,7 +55,7 @@ h1{
 /*footer*/
 .footer {
     grid-area: footer;
-    background-color: rgba(213, 59, 218, 0.67);
+    background-color: rgba(177, 61, 125, 0.65);
     padding-left: 8px;
     
 }
@@ -102,6 +102,9 @@ h1{
     margin: 50px, 500px, 0, 50px;
     
 }
+.bg-pink{
+    background-color: rgba(241, 160, 217, 0.50);
+}
 
 /*inicio de estilo para contactos*/
 .contacto-iconos{
@@ -134,4 +137,16 @@ h1{
     margin-bottom: 5%;
     padding: 25px;
     display: flex;
+}
+
+.btn-peluqueria{
+    background-color: rgba(248, 152, 216, 1.00);
+    
+}
+
+.form-style{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(243, 186, 226, 0.5);
+    border: solid;
 }

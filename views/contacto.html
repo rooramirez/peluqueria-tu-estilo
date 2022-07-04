@@ -19,7 +19,7 @@
             <!--inicio de navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../icons/Hair-Barbers-Scissors-icon.png" alt="logo de la Peluqueria Tu Estilo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,11 +80,11 @@
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section>
-            <form class="style-form" action="envio.js" id="contacto">
+        <section class="container">
+            <!-- <form class="style-form" action="envio.js" id="contacto">
                 <div class="letra-form">
-                    <!-- <fieldset> -->
-                        <legend>Informacion Personal</legend>
+                 <fieldset> -->
+                        <!-- <legend>Informacion Personal</legend>
                         <label for="name">Nombre: </label>
                         <input type="text" id="name" placeholder="Cosme">
                         <br>
@@ -113,16 +113,84 @@
                         <br>
                         <label for="promos">Quiero recibir emais con las promociones</label>
                         <input type="checkbox" id="promos" value="si">
-                    <!-- </fieldset>
+                  </fieldset>
                     <fieldset> -->
-                        <legend >Consulta</legend>
+                        <!-- <legend >Consulta</legend>
                         <textarea class="margin-textarea" name="" id="" cols="50" rows="25" placeholder="Dejanos tu consulta..."></textarea>
-                    <!-- </fieldset> -->
-                    <br>
+                     </fieldset> -->
+                    <!-- <br>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Cancelar">
             </div>
-        </form>
+        </form> --> 
+        <h3>¿Como podemos ayudarte?</h3>
+        <h4>Dejanos tus datos y consulta...</h4>
+        <!--form bootstrap-->
+        <form class="row g-3 form-style">
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputPassword4">
+            </div>
+            <fieldset class="row g-2">
+                <legend class="col-form-label col-sm-2 pt-0">Genero: </legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Femenino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                       Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                       Otro
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">Edad</label>
+              <select id="inputState" class="form-select">
+                <option selected>...</option>
+                <option>Menor de 18 años</option>
+                <option>Entre 18 y 25 años</option>
+                <option>Entre 26 y 34 años</option>
+                <option>35 ó más</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="g-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu consulta: </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Acepto terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-peluqueria">Sign in</button>
+            </div>
+          </form>
+        <!--fin form bootstrap-->
+
         </section>
     </main>
     <!--footer propio-->
