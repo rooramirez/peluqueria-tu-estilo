@@ -48,9 +48,6 @@ h1{
 /*fin css para titulo*/
 
 /*Cards*/
-.img-card{
-   
-}
 
 /*footer*/
 .footer {
@@ -104,6 +101,7 @@ h1{
 }
 .bg-pink{
     background-color: rgba(241, 160, 217, 0.50);
+
 }
 
 /*inicio de estilo para contactos*/
