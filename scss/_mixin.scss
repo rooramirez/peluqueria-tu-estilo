@@ -1,0 +1,21 @@
+@mixin form-style($bgColor, $borde){
+    background-color: $bgColor;
+    border: $borde;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+}
+
+.form-style{
+    @include form-style(rgba(243, 186, 226, 0.5), solid)
+}
+
+@mixin btnForm($bg-btn, $m-l, $m-r){
+    background-color: $bg-btn ;
+    margin-left: $m-l;
+    margin-right: $m-r;
+}
+
+.btn-peluqueria {
+    @include btnForm(rgba(248, 152, 216, 1.00), 40%, auto)
+}
