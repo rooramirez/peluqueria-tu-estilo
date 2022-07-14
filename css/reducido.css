@@ -834,3 +834,25 @@ li a:hover {
 
 h1, .h1 {
   color: rgba(255, 20, 20, 0.866); }
+
+/* .img-size {
+  width:  50vw;
+  height: 70vh; }
+
+.img-inline {
+  display: inline-flex; } */
+
+.titulo, .animation-title {
+text-align: center;
+font-size: 70px; }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animation-title {
+  animation-name: textAlpha;
+  animation-duration: 4s;
+  animation-delay: 1s; }
