@@ -7832,4 +7832,11 @@ textarea.form-control-lg {
 .btn-peluqueria {
   background-color: #f898d8;
   margin-left: 40%;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #e48443; }
+
+li a:hover {
+  color: #ff7700; }
+
+h1, .h1 {
+  color: rgba(255, 20, 20, 0.866); }

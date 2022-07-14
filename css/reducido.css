@@ -807,7 +807,7 @@ button,
   background-color: rgba(241, 160, 217, 0.5); }
 
 .bg-gradient {
-    background: linear-gradient(to right, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%) !important; }
+  background: linear-gradient(to right, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%) !important; }
 
 .footer {
   grid-area: footer;
@@ -825,4 +825,12 @@ button,
 .btn-peluqueria {
   background-color: #f898d8;
   margin-left: 40%;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #e48443; }
+
+
+li a:hover {
+  color: #ff7700!important; }
+
+h1, .h1 {
+  color: rgba(255, 20, 20, 0.866); }

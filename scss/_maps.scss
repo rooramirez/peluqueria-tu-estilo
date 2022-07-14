@@ -1,0 +1,27 @@
+//map
+$paleta:(
+    //comun para todo (textos)
+    '1': rgb(18, 16, 16),
+    //Navar
+    '2': rgb(190, 31, 116),
+
+    // Titulos:
+    '3': rgba(255, 20, 20, 0.866),
+    //Botones:
+    '4': rgb(228, 132, 67),
+    //Hover:
+    '5': rgb(255, 119, 0),
+);
+
+li {
+    
+    a{
+        &:hover{
+            color: map-get($map: $paleta, $key: '5');
+        }
+    }
+}
+
+h1{
+    color: map-get($map: $paleta, $key: '3');
+}
