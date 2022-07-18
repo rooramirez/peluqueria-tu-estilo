@@ -7835,6 +7835,16 @@ textarea.form-control-lg {
   margin-right: auto;
   color: #e48443; }
 
+.iconos-tienda-individial {
+  margin-left: 40%;
+  margin-right: auto; }
+
+.maps {
+  margin-left: 20%;
+  margin-right: auto;
+  height: 70vh;
+  width: 40vw; }
+
 li a:hover {
   color: #ff7700; }
 

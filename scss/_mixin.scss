@@ -20,3 +20,22 @@
 .btn-peluqueria {
     @include btnForm(rgba(248, 152, 216, 1.00), 40%, auto, rgb(228, 132, 67))
 }
+
+@mixin element-center($m-l, $m-r ) {
+    margin-left: $m-l;
+    margin-right: $m-r;
+}
+
+.iconos-tienda-individial{
+    @include element-center(40%, auto )
+}
+
+
+@mixin img-size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+.maps{
+    @include element-center(20%, auto );
+    @include img-size(70vh, 40vw)
+}
