@@ -1,19 +1,21 @@
 //Clases bases:
 
-.titulo{
-    text-align: center;
-    font-size: 70px;
-}
-
-//animation title
-@keyframes textAlpha{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-.animation-title{
-    @extend .titulo;
-    animation-name: textAlpha;
-    animation-duration: 4s;
-    animation-delay: 1s;
+@media (min-width: 960px){
+    .titulo{
+        text-align: center;
+        font-size: 70px;
+    }
+    
+    //animation title
+    @keyframes textAlpha{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    
+    .animation-title{
+        @extend .titulo;
+        animation-name: textAlpha;
+        animation-duration: 4s;
+        animation-delay: 1s;
+    }
 }
