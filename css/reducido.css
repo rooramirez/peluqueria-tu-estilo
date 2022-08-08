@@ -942,21 +942,6 @@ li a:hover {
 h1, .h1 {
   color: rgba(255, 20, 20, 0.866); }
 
-/* .titulo, .animation-title {
-  text-align: center;
-  font-size: 70px; } */
-/*   
-@keyframes textAlpha {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.animation-title {
-  animation-name: textAlpha;
-  animation-duration: 4s;
-  animation-delay: 1s; } */
-
 @keyframes tiendaAnimate{
   0%{background-image: url("https://i.ibb.co/597h4m2/1.jpg")}
   25%{background-image: url("https://i.ibb.co/ws49bYL/3.jpg")}
@@ -989,3 +974,17 @@ h1, .h1 {
     animation-name: textAlpha;
     animation-duration: 4s;
     animation-delay: 1s; } }
+
+/*escala de grises para img*/
+.gradiant{
+  filter: grayscale(1);
+}
+/*fin gradiant*/
+
+#historia{
+  background-image: url("https://i.ibb.co/k2MwJzG/pelu-luli.jpg");
+  color: white;
+  background-size: 100vw;
+  height: 150vh;
+  background-repeat: no-repeat;
+}
