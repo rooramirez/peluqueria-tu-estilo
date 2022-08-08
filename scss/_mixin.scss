@@ -35,6 +35,7 @@
     height: $alto;
     width: $ancho;
 }
+
 .maps{
     @include element-center(20%, auto );
     @include img-size(70vh, 40vw)
