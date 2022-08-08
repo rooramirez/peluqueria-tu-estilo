@@ -975,15 +975,9 @@ h1, .h1 {
     animation-duration: 4s;
     animation-delay: 1s; } }
 
-/*escala de grises para img*/
-.gradiant{
-  filter: grayscale(1);
-}
-/*fin gradiant*/
 
 #historia{
   background-image: url("https://i.ibb.co/k2MwJzG/pelu-luli.jpg");
-  color: white;
   background-size: 100vw;
   height: 150vh;
   background-repeat: no-repeat;
